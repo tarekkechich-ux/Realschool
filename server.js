@@ -7,7 +7,7 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*'); // autorise tout domaine
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  next();
+  next(); 
 });
 
 // Fonction récursive qui copie `r` dans `n` dans chaque sous-objet
