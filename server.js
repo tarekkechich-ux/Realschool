@@ -48,10 +48,11 @@ app.post('/process', (req, res) => {
 
 // Route GET simple de test
 app.get('/', (req, res) => {
-  res.send('API prête à traiter un tableau JS envoyé en JSON.');
+  res.send('API prête à traiter un tableau JS envoyé en JSON: port écoute 8000');
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
+const port = process.env.PORT || 8000;
+app.listen(port, () => 
+{
   console.log("Serveur Node.js actif sur le port " + port);
 });

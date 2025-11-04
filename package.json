@@ -1,5 +1,5 @@
 {
-  "name": "realschool-glitch-api",
+  "name": "realschool-QuizzRenamer",
   "version": "1.0.0",
   "description": "API Node.js pour traitement JS ActivePresenter",
   "main": "server.js",
