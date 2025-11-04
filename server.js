@@ -48,7 +48,7 @@ app.post('/process', (req, res) => {
 
 // Route GET simple de test
 app.get('/', (req, res) => {
-  res.send('API prête à traiter un tableau JS envoyé en JSON: port écoute 8000');
+  res.send('API prête à traiter un tableau JS envoyé en JSON: port écoute 8000 ok');
 });
 
 const port = process.env.PORT || 8000;
