@@ -30,6 +30,7 @@ app.post('/process', (req, res) => {
   const input = req.body.content;
 
   try {
+    console.log(" receiving data from realschool ");
     // Évaluer la chaîne reçue (ex: '[ {...}, {...} ]') pour obtenir un tableau JavaScript
    let tableau = eval('(' + input + ')');
 
@@ -40,6 +41,7 @@ app.post('/process', (req, res) => {
     const output = JSON.stringify(tableau, null, 2) .replace(/"(\w+)"\s*:/g, '$1:'); // indente pour plus de lisibilité
 
     res.set('Content-Type', 'application/json');
+    console.log(" sending data to realschool ");
     res.send(output);
   } catch (e) {
     res.status(400).send('Erreur de traitement : ' + e.message);
